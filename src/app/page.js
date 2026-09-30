@@ -3,6 +3,9 @@ import DecorativeObject from "@/Component/Background/DecorativeObject";
 import GridBackground from "@/Component/Background/gridBaground";
 import BannerWriting from "@/Component/Landing/BannerWriting";
 import CompanyLogo from "@/Component/Landing/CompanyLogo";
+import Course from "@/Component/Landing/Course";
+import Discover from "@/Component/Landing/Discover";
+import Explore from "@/Component/Landing/Explore";
 import Navbar from "@/Component/Landing/Navbar";
 import { getCourse } from "@/service/courseService";
 import Image from "next/image";
@@ -27,6 +30,13 @@ export default async function Home() {
       <section className=" companyLogo w-full relative bg-[#F5F5F6]">
                 <CompanyLogo></CompanyLogo>
       </section>
+
+      <section className=" companyLogo w-full relative bg-[#FFFFFF] my-[60px] md:my-[120px]">
+               <Discover></Discover>
+               <Course data={data}></Course>
+               <Explore></Explore>
+      </section>
+
 
     </div>
   );
