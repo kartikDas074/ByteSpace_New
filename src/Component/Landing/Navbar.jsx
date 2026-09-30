@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <div className="  w-[90%] md:w-[80%]  mx-auto mt-8.75 mb-12  ">
+    <div className=" relative z-10  w-[90%] md:w-[80%]  mx-auto mt-8.75 mb-12  ">
       <div className="flex justify-between items-center">
         <div className="flex gap-1.5 justify-center items-center">
           <Image

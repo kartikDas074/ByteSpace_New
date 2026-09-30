@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "courseName": "Complete Web Development Bootcamp",
+    "lessons": 86,
+    "totalTime": 42,
+    "totalComments": 328,
+    "rating": 4.8,
+    "courseCreator": "Daniel Carter",
+    "level": "Beginner",
+    "price": 49.99,
+    "courseImage": "/courses/web-development.jpg"
+  },
+  {
+    "id": 2,
+    "courseName": "Modern UI/UX Design Masterclass",
+    "lessons": 64,
+    "totalTime": 28,
+    "totalComments": 214,
+    "rating": 4.7,
+    "courseCreator": "Sophia Miller",
+    "level": "Intermediate",
+    "price": 39.99,
+    "courseImage": "/courses/ui-ux.jpg"
+  },
+  {
+    "id": 3,
+    "courseName": "React & Next.js From Zero to Production",
+    "lessons": 72,
+    "totalTime": 35,
+    "totalComments": 451,
+    "rating": 4.9,
+    "courseCreator": "Alex Johnson",
+    "level": "Intermediate",
+    "price": 59.99,
+    "courseImage": "/courses/react-nextjs.jpg"
+  },
+  {
+    "id": 4,
+    "courseName": "JavaScript Algorithms & Data Structures",
+    "lessons": 91,
+    "totalTime": 46,
+    "totalComments": 386,
+    "rating": 4.8,
+    "courseCreator": "Michael Anderson",
+    "level": "Intermediate",
+    "price": 44.99,
+    "courseImage": "/courses/javascript.jpg"
+  },
+  {
+    "id": 5,
+    "courseName": "Python for Data Science",
+    "lessons": 78,
+    "totalTime": 38,
+    "totalComments": 297,
+    "rating": 4.7,
+    "courseCreator": "Emma Wilson",
+    "level": "Beginner",
+    "price": 34.99,
+    "courseImage": "/courses/python-data.jpg"
+  },
+  {
+    "id": 6,
+    "courseName": "Full-Stack MERN Developer",
+    "lessons": 104,
+    "totalTime": 51,
+    "totalComments": 512,
+    "rating": 4.9,
+    "courseCreator": "James Wilson",
+    "level": "Advanced",
+    "price": 69.99,
+    "courseImage": "/courses/mern.jpg"
+  }
+]
