@@ -29,21 +29,21 @@ const CustomTestimonials = () => {
     return (
          <div className="relative overflow-hidden bg-[#F8F9FA] px-5 py-16 sm:px-8 md:py-20 lg:px-14 lg:py-24">
 
-      {/* Background glow */}
+     
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute left-[0%] top-[40%] h-[350px] w-[350px] rounded-full bg-[#003BE2]/23 blur-[100px]" />
 
         <div className="absolute right-[-12%] top-[8%] h-[400px] w-[400px] rounded-full bg-[#CBFC01]/55 blur-[120px]" />
 
-        <div className="absolute right-[40%] top-[2%] h-[300px] w-[350px] rounded-full bg-[#CBFC01]/64 blur-[100px]" />
+        <div className="absolute hidden md:flex right-[40%] top-[2%] h-[300px] w-[350px] rounded-full bg-[#CBFC01]/64 blur-[100px]" />
 
         
       </div>
 
-      {/* Content */}
+     
       <div className="relative z-10 mx-auto max-w-[1140px]">
 
-        {/* Heading */}
+     
         <div className="mb-10 grid grid-cols-1 items-center gap-8 md:mb-14 md:grid-cols-2 lg:gap-16">
 
           <div>
@@ -61,14 +61,14 @@ const CustomTestimonials = () => {
         </div>
 
 
-        {/* Cards */}
+       
         <div className="relative">
 
-          {/* Desktop connector */}
+          
           <div className="pointer-events-none absolute left-[10%] right-[10%] top-[45px] hidden lg:block">
             <div className="border-t border-dashed border-[#1687FF]" />
 
-            {/* Center cross */}
+            
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
               <span className="absolute left-1/2 top-1/2 h-[30px] w-px -translate-x-1/2 -translate-y-1/2 rotate-45 bg-[#1687FF]" />
               <span className="absolute left-1/2 top-1/2 h-[30px] w-px -translate-x-1/2 -translate-y-1/2 -rotate-45 bg-[#1687FF]" />
@@ -84,7 +84,7 @@ const CustomTestimonials = () => {
                 className="relative rounded-[12px] bg-white px-4 pb-5 pt-4 shadow-[0_10px_35px_rgba(0,0,0,0.04)] sm:px-5"
               >
 
-                {/* Profile */}
+              
                 <div className="relative z-10 mb-4 flex flex-col items-start gap-3">
 
                   <div className="h-[38px] w-[38px] shrink-0 overflow-hidden rounded-full border-[3px] border-[#F1F1F1]">
@@ -108,7 +108,7 @@ const CustomTestimonials = () => {
                 </div>
 
 
-                {/* Quote */}
+                
                 <p className="font-satoshi tracking-normal  text-[16px] font-normal text-[#4F4F4F] sm:text-[18px]">
                   {item.text}
                 </p>

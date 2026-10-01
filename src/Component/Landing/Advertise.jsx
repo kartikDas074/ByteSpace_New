@@ -1,128 +1,160 @@
-const testimonials = [
-  {
-    name: "Sarah M.",
-    role: "Enthusiastic Learner",
-    image:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80",
-    text: `"ByteSpace has transformed my approach to learning. The diverse range of courses and the quality of content provided by creators have exceeded my expectations. The platform truly fosters a sense of community and lifelong learning."`,
-  },
-  {
-    name: "James L.",
-    role: "Lifelong Learner",
-    image:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80",
-    text: `"I've tried several online learning platforms, and ByteSpace stands out for its vibrant community and the variety of courses available. The easy navigation and engaging content make it a go-to platform for continuous skill development."`,
-  },
-  {
-    name: "Alex B.",
-    role: "Inspired Creator",
-    image:
-      "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=200&q=80",
-    text: `"As a creator, ByteSpace has been a game-changer for me. The Course Editor is user-friendly, and the support from the community is incredible. It's fulfilling to see my courses making a positive impact on learners globally."`,
-  },
-];
+import Image from 'next/image';
+import { CheckCircle2 } from 'lucide-react';
+import Happystudent from '../Background/Happystudent';
+import CourseCard from '../Card/CourseCard';
 
-export default function Advertise() {
+export default function Advertise({data}) {
   return (
-    <section className="relative overflow-hidden bg-[#F8F9FA] px-5 py-16 sm:px-8 md:py-20 lg:px-14 lg:py-24">
-
-      {/* Background glow */}
-      <div className="pointer-events-none absolute inset-0">
-        <div className="absolute -left-24 top-20 h-[350px] w-[350px] rounded-full bg-[#D4FB20]/30 blur-[100px]" />
-
-        <div className="absolute right-[10%] top-[-100px] h-[400px] w-[400px] rounded-full bg-[#D4FB20]/25 blur-[120px]" />
-
-        <div className="absolute bottom-[-150px] left-[15%] h-[400px] w-[500px] rounded-full bg-[#BFD4FF]/40 blur-[120px]" />
-
-        <div className="absolute bottom-[-100px] right-[-100px] h-[350px] w-[350px] rounded-full bg-[#D4FB20]/15 blur-[100px]" />
-      </div>
-
-      {/* Content */}
-      <div className="relative z-10 mx-auto max-w-[1140px]">
-
-        {/* Heading */}
-        <div className="mb-10 grid grid-cols-1 items-center gap-8 md:mb-14 md:grid-cols-2 lg:gap-16">
-
-          <div>
-            <h2 className="max-w-[430px] text-3xl font-bold leading-[1.05] tracking-[-0.03em] text-[#101010] sm:text-4xl lg:text-[42px]">
-              Discover What Our
-              <br />
-              Community Is Saying
-            </h2>
-          </div>
-
-          <div>
-            <p className="max-w-[430px] text-[10px] leading-[1.7] text-[#555] sm:text-[11px] md:text-xs">
-              At ByteSpace, our vibrant community of learners and creators is
-              at the heart of what we do. Hear directly from those who have
-              experienced the transformative journey of learning and creating
-              on our platform. Explore testimonials that reflect the diverse
-              perspectives of enthusiastic learners and accomplished creators.
+    <div className="w-[85%] md:w-[80%] mx-auto sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto space-y-24">
+        
+       
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          
+          
+          <div className="space-y-6">
+            <h1 className=" font-poppins text-3xl sm:text-4xl lg:text-[44px] font-extrabold text-[#242528] leading-tight tracking-normal">
+              Your Path to Professional <br /> Growth Starts Here!
+            </h1>
+            <p className="font-satoshi font-normal text-[#4B4C53] text-sm sm:text-base leading-relaxed ">
+              Explore our curated selection of courses tailored to enhance your capabilities and accelerate your career journey. Whether you are looking to sharpen specific skills, gain industry expertise, or embark on a new career path entirely, we have the resources you need.
             </p>
-          </div>
 
-        </div>
-
-
-        {/* Cards */}
-        <div className="relative">
-
-          {/* Desktop connector */}
-          <div className="pointer-events-none absolute left-[10%] right-[10%] top-[45px] hidden lg:block">
-            <div className="border-t border-dashed border-[#1687FF]" />
-
-            {/* Center cross */}
-            <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2">
-              <span className="absolute left-1/2 top-1/2 h-[30px] w-px -translate-x-1/2 -translate-y-1/2 rotate-45 bg-[#1687FF]" />
-              <span className="absolute left-1/2 top-1/2 h-[30px] w-px -translate-x-1/2 -translate-y-1/2 -rotate-45 bg-[#1687FF]" />
+         
+            <div className="flex items-center gap-8 sm:gap-12 pt-4">
+              <div>
+                <h3 className=" font-poppins text-2xl sm:text-4xl font-bold text-[#003BE2]">12K</h3>
+                <p className=" font-satoshi text-xs sm:text-lg text-[#4F4F4F] font-medium mt-1">Students</p>
+              </div>
+              <div>
+                <h3 className=" font-poppins text-2xl sm:text-4xl font-bold text-[#003BE2]">70+</h3>
+                <p className=" font-satoshi text-xs sm:text-lg text-[#4F4F4F] font-medium mt-1">Courses</p>
+              </div>
+              <div>
+                <h3 className=" font-poppins text-2xl sm:text-4xl font-bold text-[#003BE2]">16</h3>
+                <p className=" font-satoshi text-xs sm:text-lg text-[#4F4F4F] font-medium mt-1">Creators</p>
+              </div>
             </div>
           </div>
 
-
-          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 lg:gap-[18px]">
-
-            {testimonials.map((item, index) => (
-              <div
-                key={item.name}
-                className="relative rounded-[12px] bg-white px-4 pb-5 pt-4 shadow-[0_10px_35px_rgba(0,0,0,0.04)] sm:px-5"
-              >
-
-                {/* Profile */}
-                <div className="relative z-10 mb-4 flex items-center gap-3">
-
-                  <div className="h-[38px] w-[38px] shrink-0 overflow-hidden rounded-full border-[3px] border-[#F1F1F1]">
-                    <img
-                      src={item.image}
-                      alt={item.name}
-                      className="h-full w-full object-cover"
-                    />
-                  </div>
-
-                  <div>
-                    <h3 className="text-[10px] font-bold leading-tight text-[#171717] sm:text-[11px]">
-                      {item.name}
-                    </h3>
-
-                    <p className="mt-[2px] text-[8px] font-medium text-[#1687FF] sm:text-[9px]">
-                      {item.role}
-                    </p>
-                  </div>
-
-                </div>
-
-
-                {/* Quote */}
-                <p className="text-[9px] leading-[1.65] text-[#666] sm:text-[10px]">
-                  {item.text}
-                </p>
-
+          
+          <div className="relative flex justify-center items-center py-6">
+            <div className="relative w-full max-w-md lg:max-w-lg">
+           
+              <div className="relative z-5 overflow-hidden ">
+                <Image
+                  src="/Asset/heroImg.png"
+                  alt="Professional Hero"
+                  width={600}
+                  height={600}
+                  className="w-full h-auto object-cover"
+                  priority
+                />
               </div>
-            ))}
 
+              <div className='absolute z-0 top-[-15%] left-[-12%] opacity-90'>
+                   <CourseCard course={data}></CourseCard>
+              </div>
+          
+               <div className="absolute z-50 right-[-14%] top-[10%] h-[100px] w-[100px] md:h-[170px] md:w-[170px] bg-[#D4FB20] [mask-image:url('/Asset/reverseHelix.png')] [mask-size:contain] [mask-position:center] [mask-repeat:no-repeat] [-webkit-mask-image:url('/Asset/reverseHelix.png')] [-webkit-mask-size:contain] [-webkit-mask-position:center] [-webkit-mask-repeat:no-repeat]" />
+           
+              <div className="absolute top-[34%] right-[-6%] sm:right-[-14%] w-[150px] md:w-[250px] bg-white/95 backdrop-blur-md p-3 sm:p-4 rounded-2xl shadow-xl border border-slate-100  z-10 flex flex-col gap-[2px]">
+                <p className=" font-satoshi text-[10px] sm:text-[14px] font-medium text-[#242528]">Learning Progress</p>
+                <h4 className=" font-poppins text-[24px] sm:text-[48px] font-bold text-[#242528]">55%</h4>
+                <div className="w-full bg-[#D4FB20]/10 h-1.5 rounded-full ">
+                  <div className="bg-[#D4FB20] h-full w-[55%]" />
+                </div>
+              </div>
+
+            </div>
           </div>
+
+        </div>
+
+     
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center pt-8">
+          
+          
+          <div className="relative flex justify-center items-center order-2 lg:order-1 py-6">
+            <div className="relative w-full max-w-md lg:max-w-lg">
+              
+             
+              <div className="relative rounded-3xl z-20">
+                <Image
+                  src="/Asset/GirlAnalytics.png"
+                  alt="Analytics Girl"
+                  width={600}
+                  height={600}
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+
+               <div className="absolute z-50 right-[10%] top-[14%] h-[100px] w-[100px] md:h-[170px] md:w-[170px] bg-[#D4FB20] [mask-image:url('/Asset/helix.png')] [mask-size:contain] [mask-position:center] [mask-repeat:no-repeat] [-webkit-mask-image:url('/Asset/helix.png')] [-webkit-mask-size:contain] [-webkit-mask-position:center] [-webkit-mask-repeat:no-repeat]" />
+
+              
+              <div className="absolute top-4 -left-3 sm:-left-6 bg-[#003BE2] text-[#F5F5F6] p-3 sm:p-4 w-[200px] md:w-[300px] rounded-2xl shadow-xl min-w-[140px] sm:min-w-[170px] z-10">
+                <div className="flex justify-between items-start">
+                  <div>
+                    <p className=" font-satoshi text-[10px] opacity-50 md:text-[16px] uppercase tracking-wider font-semibold">Total Revenue</p>
+                    <p className=" font-sans text-[10px] ">July 2024</p>
+                  </div>
+                </div>
+                <h4 className="text-lg sm:text-2xl font-bold mt-1">$120.29</h4>
+                <div className="w-full bg-[#D4FB20]/40 h-1.5 rounded-full mt-2 overflow-hidden">
+                  <div className="bg-[#D4FB20] h-full w-[70%]" />
+                </div>
+              </div>
+
+             <div className="absolute top-[28%] -left-3 sm:-left-6 bg-[#003BE2] text-[#F5F5F6] p-3 sm:p-4 w-[200px] rounded-2xl shadow-xl min-w-[140px] sm:min-w-[170px] z-10">
+                <p className=" font-satoshi text-[10px] opacity-50 md:text-[16px] uppercase tracking-wider font-semibold">Year To Date</p>
+                <p className=" font-sans text-[10px] ">2023</p>
+                <h4 className="text-lg sm:text-2xl font-bold mt-1">$1,200.38</h4>
+                <span className="inline-block bg-[#D4FB20] text-slate-900 text-[10px] font-bold px-2 py-0.5 rounded-full mt-2">
+                  +22%
+                </span>
+              </div>
+
+              
+              <div className="absolute bottom-[10%] right-[6%]  bg-white/95 backdrop-blur-md p-3 sm:p-4 rounded-2xl shadow-xl border border-slate-100 flex flex-col gap-2 z-40">
+                <Happystudent></Happystudent>
+              </div>
+
+             
+           
+
+            </div>
+          </div>
+
+         
+          <div className="space-y-6 order-1 lg:order-2">
+            <h2 className=" font-poppins text-3xl sm:text-4xl lg:text-[44px] font-extrabold text-[#242528] leading-tight">
+             Create & Manage <br /> Courses Easily.
+            </h2>
+            <p className="text-[#4B4C53] text-sm sm:text-[18px] leading-relaxed max-w-xl">
+              <span className='font-bold text-[20px]'>ByteSpace</span> supports individuals or entities in the creation, publication, and administration of educational courses.
+            </p>
+
+            
+            <ul className="space-y-3.5 pt-2">
+              {[
+                "Share Your Expertise",
+                "Monetize Your Passion",
+                "Flexibility and Autonomy",
+                "Build a Community"
+              ].map((item, index) => (
+                <li key={index} className="flex items-center gap-3 text-[#242528] font-satoshi font-medium text-sm sm:text-[18px]">
+                  <div className="w-5 h-5 rounded-full bg-blue-600 text-white flex items-center justify-center flex-shrink-0">
+                    <CheckCircle2 className="w-4 h-4" />
+                  </div>
+                  <span >{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
         </div>
 
       </div>
-    </section>
+    </div>
   );
 }

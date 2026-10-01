@@ -4,7 +4,7 @@ export default function Circle() {
   return (
     <div className="z-2 w-full max-w-5xl mx-auto flex justify-center items-end mt-6 sm:mt-7 md:mt-8 overflow-visible">
 
-      {/* Green Half Circle (Platform Base) */}
+     
       <div className="hero-platform absolute bottom-0 rounded-full border-[#CBFC01] left-1/2 -translate-x-1/2
         /* 1. Very Small (<640px) */
         w-[410px] h-[410px] border-[105px] top-[400px]
@@ -16,7 +16,7 @@ export default function Circle() {
         lg:w-[min(1149px,80vw)] lg:h-[min(1149px,80vw)] lg:border-[min(320px,22.2vw)] lg:top-[582px]"
       />
 
-      {/* Picture Adjust */}
+      
       <div className="hero-person-frame absolute z-10 h-auto left-1/2 -translate-x-1/2
         /* 1. Very Small (<640px) */
         w-[230px] top-[350px]
@@ -41,7 +41,7 @@ export default function Circle() {
         />
       </div>
 
-      {/* Left Card: UI/UX Design */}
+     
       <div className="hero-course-card absolute z-20 bg-white rounded-2xl shadow-xl border border-gray-100 flex items-center
         /* 1. Very Small (<640px) */
         left-2.5 top-[420px] p-2 max-w-[150px] gap-1.5
@@ -66,7 +66,7 @@ export default function Circle() {
         </div>
       </div>
 
-      {/* Right Card: Learning Progress */}
+      
       <div className="hero-progress-card absolute z-20 bg-white rounded-2xl shadow-xl border border-gray-100 text-left
         /* 1. Very Small (<640px) */
         right-2.5 left-auto top-[490px] p-2 min-w-[110px] space-y-1
@@ -87,7 +87,7 @@ export default function Circle() {
         >
           55%
         </h3>
-        {/* Progress bar */}
+       
         <div className="bg-gray-200 rounded-full overflow-hidden mt-1
           w-[75px] h-1.5
           sm:w-[100px]

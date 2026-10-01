@@ -1,3 +1,4 @@
+import Blur from "@/Component/Background/Blur";
 import Circle from "@/Component/Background/Circle";
 import DecorativeObject from "@/Component/Background/DecorativeObject";
 import FLoatingObject from "@/Component/Background/FLoatingObject";
@@ -46,8 +47,9 @@ export default async function Home() {
       </section>
       
       {/* Advertising Section */}
-      <section className=" Feature w-full relative bg-[#FFFFFF] ">
-            {/* <Advertise></Advertise> */}
+      <section className=" Feature w-full overflow-hidden relative bg-[#FFFFFF] py-[60px] md:py-[120px] ">
+            <Advertise data={data[0]}></Advertise>
+             <Blur></Blur>
       </section>
 
       {/* CTA section */}
@@ -58,8 +60,9 @@ export default async function Home() {
       </section>
 
     {/* Custom Comment Section */}
-      <section className=" Feature w-full relative bg-[#FFFFFF] ">
+      <section className=" Feature w-full relative bg-[#FAFAFA] ">
            <CustomTestimonials></CustomTestimonials>
+          
       </section>
 
     </div>
