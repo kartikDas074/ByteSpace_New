@@ -3,6 +3,7 @@ import Circle from "@/Component/Background/Circle";
 import DecorativeObject from "@/Component/Background/DecorativeObject";
 import FLoatingObject from "@/Component/Background/FLoatingObject";
 import GridBackground from "@/Component/Background/gridBaground";
+import Footer from "@/Component/Footer";
 import Advertise from "@/Component/Landing/Advertise";
 import BannerWriting from "@/Component/Landing/BannerWriting";
 import CompanyLogo from "@/Component/Landing/CompanyLogo";
@@ -13,6 +14,7 @@ import Discover from "@/Component/Landing/Discover";
 import Explore from "@/Component/Landing/Explore";
 import Navbar from "@/Component/Landing/Navbar";
 import { getCourse } from "@/service/courseService";
+import { Footprints } from "lucide-react";
 import Image from "next/image";
 
 export default async function Home() {
@@ -64,7 +66,8 @@ export default async function Home() {
            <CustomTestimonials></CustomTestimonials>
           
       </section>
-
+     {/* Footer */}
+     <Footer></Footer>
     </div>
   );
 }
