@@ -1,9 +1,11 @@
 import Circle from "@/Component/Background/Circle";
 import DecorativeObject from "@/Component/Background/DecorativeObject";
+import FLoatingObject from "@/Component/Background/FLoatingObject";
 import GridBackground from "@/Component/Background/gridBaground";
 import BannerWriting from "@/Component/Landing/BannerWriting";
 import CompanyLogo from "@/Component/Landing/CompanyLogo";
 import Course from "@/Component/Landing/Course";
+import Cta from "@/Component/Landing/Cta";
 import Discover from "@/Component/Landing/Discover";
 import Explore from "@/Component/Landing/Explore";
 import Navbar from "@/Component/Landing/Navbar";
@@ -26,17 +28,32 @@ export default async function Home() {
         <DecorativeObject></DecorativeObject>
         <Circle></Circle>
       </section>
+
+
       {/* Company Logo  */}
       <section className=" companyLogo w-full relative bg-[#F5F5F6]">
                 <CompanyLogo></CompanyLogo>
       </section>
+      
 
-      <section className=" companyLogo w-full relative bg-[#FFFFFF] my-[60px] md:my-[120px]">
+      {/* Course Feature and Learning Section */}
+      <section className=" Feature w-full relative bg-[#FFFFFF] my-[60px] md:my-[120px]">
                <Discover></Discover>
                <Course data={data}></Course>
                <Explore></Explore>
       </section>
+      
+      {/* Advertising Section */}
+      <section className=" Feature w-full relative bg-[#FFFFFF] ">
 
+      </section>
+
+      {/* CTA section */}
+      <section className="  CTA w-full relative overflow-hidden bg-[#003BE2] ">
+             <GridBackground></GridBackground>
+             <Cta></Cta>
+             <FLoatingObject></FLoatingObject>
+      </section>
 
     </div>
   );
