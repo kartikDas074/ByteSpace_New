@@ -1,8 +1,12 @@
 'use server'
-export const getApi=async(url)=>{
-    const data=await fetch(`http://localhost:3000${url}`);
-    if(!data.ok){
-        throw new Error ('Failed To fetch data. Something went wrong. ')
-    }
-    return data.json();
-}
+
+import fs from "fs/promises";
+import path from "path";
+
+export const getApi = async (url) => {
+  const filePath = path.join(process.cwd(), "public", url);
+
+  const data = await fs.readFile(filePath, "utf-8");
+
+  return JSON.parse(data);
+};
