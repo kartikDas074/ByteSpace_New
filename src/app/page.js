@@ -2,10 +2,12 @@ import Circle from "@/Component/Background/Circle";
 import DecorativeObject from "@/Component/Background/DecorativeObject";
 import FLoatingObject from "@/Component/Background/FLoatingObject";
 import GridBackground from "@/Component/Background/gridBaground";
+import Advertise from "@/Component/Landing/Advertise";
 import BannerWriting from "@/Component/Landing/BannerWriting";
 import CompanyLogo from "@/Component/Landing/CompanyLogo";
 import Course from "@/Component/Landing/Course";
 import Cta from "@/Component/Landing/Cta";
+import CustomTestimonials from "@/Component/Landing/CustomTestimonials";
 import Discover from "@/Component/Landing/Discover";
 import Explore from "@/Component/Landing/Explore";
 import Navbar from "@/Component/Landing/Navbar";
@@ -45,7 +47,7 @@ export default async function Home() {
       
       {/* Advertising Section */}
       <section className=" Feature w-full relative bg-[#FFFFFF] ">
-
+            {/* <Advertise></Advertise> */}
       </section>
 
       {/* CTA section */}
@@ -53,6 +55,11 @@ export default async function Home() {
              <GridBackground></GridBackground>
              <Cta></Cta>
              <FLoatingObject></FLoatingObject>
+      </section>
+
+    {/* Custom Comment Section */}
+      <section className=" Feature w-full relative bg-[#FFFFFF] ">
+           <CustomTestimonials></CustomTestimonials>
       </section>
 
     </div>
